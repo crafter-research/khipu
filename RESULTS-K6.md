@@ -1,0 +1,25 @@
+# K6 results (2026-11-18)
+
+PREREG locked in `907cb0a`. Scripts `9ffcbb8`, fixed in `fbf5633`; per-khipu report `scripts/k6_per_khipu.py`. Outputs `results/k6.json`, `results/k6_per_khipu.json`. KFG sum pages: 370 of 619 khipus have one (249 return 404).
+
+## Deviations (declared)
+- Colors: KFG pages show the color covering the longest stretch of a multi-segment cord, so workbook colors were normalized the same way before matching. Found while testing the parser on KH0326, before the first run.
+- **First run had a mapping bug** (`results/k6_run1_buggy_mapping.json`): single-pendant groups are written `9.0cm 1 (1)` in `CordGroups`, without "group of", so they were skipped and every later group number shifted. 2,900 of 5,837 relations failed the color check and the verdict was "killed" (0.377, inside [0.355, 0.382]). The fix brings mismatches to 43 (0.7%). The verdict below is from the fixed run. The fix is a parsing correction checked against the page's own pendant ids, not a change of design. I saw the buggy verdict before fixing.
+
+## Verdict: survives
+- 360 khipus, 5,773 sum relations (KH0326 excluded).
+- Share of totals whose color appears in none of their summands: **0.405**. Null (colors permuted within khipu, 200 draws): mean 0.372, 95% interval [0.360, 0.383].
+- Counting each total cord once: 0.416 vs null [0.366, 0.389].
+- Each khipu weighted equally: mean excess over its own null +0.062, bootstrap CI [+0.031, +0.091].
+- KH0326 (excluded, non-blind): every one of its 21 totals has a color absent from its summands (null mean 0.73).
+
+## Claim
+Across khipus, a cord that is the sum of other cords carries a color absent from its summands more often than chance: about 41% of totals against 37% expected. Color marks totals, at least in part.
+
+Credence: moderate.
+
+## Heterogeneity
+Only 50% of khipus sit above their null and 46% below. The effect is concentrated: some khipus mark totals strongly (KH0468: 0.82 vs a null of 0.51), many do not (KH0082: 0.01 vs 0.03). This fits K5: the legend is local, and some khipus use color to mark a total while others do not.
+
+## Next
+Which khipus mark totals, and do they share provenance, period, recorder or structure? That turns "some khipus" into a classification.

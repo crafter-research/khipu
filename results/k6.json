@@ -1,0 +1,37 @@
+{
+  "sum_pages": 370,
+  "relations_parsed": 5837,
+  "relations_dropped_color_mismatch": 43,
+  "confirmatory": {
+    "khipus": 360,
+    "relations": 5773,
+    "mean_D": 0.40498874068941626,
+    "null_mean": 0.3719729776545989,
+    "null_95": [
+      0.36046682833881866,
+      0.3831716611813615
+    ],
+    "verdict": "survives",
+    "per_cord_mean_D": 0.41574556830031284,
+    "per_cord_null_95": [
+      0.36568821689259645,
+      0.3887434827945777
+    ]
+  },
+  "excluded_KH0326": {
+    "khipus": 1,
+    "relations": 21,
+    "mean_D": 1.0,
+    "null_mean": 0.7276190476190476,
+    "null_95": [
+      0.5238095238095238,
+      0.9047619047619048
+    ],
+    "verdict": "survives",
+    "per_cord_mean_D": 1.0,
+    "per_cord_null_95": [
+      0.53125,
+      0.90625
+    ]
+  }
+}
