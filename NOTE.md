@@ -20,7 +20,7 @@ Each belief was written as a falsifiable sentence with an oracle, a null and a d
 |---|---|---|---|
 | K1 T1 | Non-numeric attributes predict value classes on khipus from unseen provenances | Killed | -0.207 bits per cord vs marginal |
 | K1 T2 | The same, within a khipu | Survives | +0.085 bits vs colors shuffled within khipu, CI [+0.068, +0.104] |
-| K2a | The color legend is shared within a provenance | Killed (weak test) | -0.081, CI [-0.203, +0.032] |
+| K2a | The color legend is shared within a provenance | Untested (models worse than uniform guessing) | -0.081, CI [-0.203, +0.032] |
 | K2b | Color beats colors shuffled within each cluster | Survives | +0.043, CI [+0.031, +0.056] |
 | K3 | Santa first cords match the 1670 tribute (OKR clusters as groups) | Not testable | group definition found 39 of 133 groups |
 | K3.1 | Same, six-cord runs, OKR values | Killed | total 749, inflated by OKR coding on UR090 |
