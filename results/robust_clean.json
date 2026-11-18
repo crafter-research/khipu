@@ -1,0 +1,26 @@
+{
+  "min_exact_rate": 0.9,
+  "khipus": 507,
+  "cords": 29416,
+  "bits": {
+    "real": 1.2898084139145927,
+    "perm_khipu": 1.372906754836189,
+    "perm_cluster": 1.333541791400463
+  },
+  "T2_real_vs_perm_khipu": {
+    "gain_bits_per_cord": 0.0830983409215965,
+    "ci95": [
+      0.0659436564199948,
+      0.10175580236133146
+    ],
+    "p_one_sided": 0.0
+  },
+  "K2b_real_vs_perm_cluster": {
+    "gain_bits_per_cord": 0.04373337748587052,
+    "ci95": [
+      0.02975889346203112,
+      0.059007163615526596
+    ],
+    "p_one_sided": 0.0
+  }
+}
