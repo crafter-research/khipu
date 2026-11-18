@@ -1,6 +1,6 @@
 # K7 results (2026-11-18)
 
-PREREG locked in `acde81a` (local only, no remote). Script committed after the lock. Output `results/k7.json`, draws in `results/k7_ckpt/` (not committed). Runtime about 3 minutes.
+PREREG locked in `bc7163a` (local only, no remote). Script committed after the lock. Output `results/k7.json`, draws in `results/k7_ckpt/` (not committed). Runtime about 3 minutes.
 
 ## Verdict: fails in both subsets. K5a is withdrawn as a claim.
 | | AS (Ascher tradition) | UR (Urton tradition) |
