@@ -33,4 +33,4 @@ Raw data is not committed; it downloads from its public sources. Results in `res
 - Medrano and Urton (2018), doi 10.1215/00141801-4260638; FitzPatrick (2024), doi 10.1215/00141801-11266328; Urton (2017), *Inka History in Knots*, University of Texas Press
 
 ## License
-Code MIT. Text CC BY 4.0.
+Code: MIT (see LICENSE). Text (Markdown notes, PREREGs, results): CC BY 4.0.
