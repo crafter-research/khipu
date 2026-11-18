@@ -1,6 +1,6 @@
-# Khipu colors carry a local legend: notes from six preregistered tests (draft, private)
+# Khipu colours and numbers: notes from seven preregistered tests
 
-Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Not published. Every claim below points to a locked PREREG, a script commit and a results file in this repository.
+Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Every claim below points to a locked PREREG, a script commit and a results file in this repository.
 
 ## Summary (revised 2026-11-18 after a hostile review and K7)
 - The color-legend claim is **withdrawn**. With the cord layout controlled (K7), color still predicts value magnitude within a khipu better than 200 shuffles, in both the Ascher and the Urton recording traditions, but by about 0.016 bits per cord, below the 0.02 we fixed beforehand. "Totals carry their own color" (K6) was an artefact of color bands and is retracted.

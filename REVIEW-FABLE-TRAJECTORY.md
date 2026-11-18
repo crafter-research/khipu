@@ -11,7 +11,7 @@ Read-only review of commits, PREREGs, results, scripts and data.
 - About 15 tests; Holm applied only inside K1 and K2. No global correction.
 
 ## Technical (checked by the reviewer)
-- **K6 is an artefact of color bands.** Summands are contiguous in 100% of relations, the total sits a median of 16 cords away. Permuting colors across the whole khipu destroys spatial autocorrelation. Under a circular-rotation null, observed 0.405 falls below the null (mean 0.421, 95% [0.408, 0.432]); per-khipu excess drops to +0.011, CI [-0.015, +0.037]. **K6 is retracted.** Independently reproduced by Kai: rotation null mean 0.422, 95% [0.411, 0.435], 200 draws.
+- **K6 is an artefact of color bands.** Summands are contiguous in 100% of relations, the total sits a median of 16 cords away. Permuting colors across the whole khipu destroys spatial autocorrelation. Under a circular-rotation null, observed 0.405 falls below the null (mean 0.421, 95% [0.408, 0.432]); per-khipu excess drops to +0.011, CI [-0.015, +0.037]. **K6 is retracted.** Independently reproduced by the lab: rotation null mean 0.422, 95% [0.411, 0.435], 200 draws.
 - **K5a confounds color with layout.** Adding a local position prior (khipu, level, ordinal) cuts the gain from 0.054 to 0.036 (8 draws, all worse than real).
 - **OKR and KFG are not independent**: same Harvard KDB lineage (Brezine). "KFG-verified" verifies nothing. The tens-as-hundreds bug has an external oracle (Urton Appendix B) only for KH0326.
 - **The recorder check used the wrong variable**: `CREATED_BY` is who typed the data, not the field recorder. The Ascher vs Urton confound was never tested.
