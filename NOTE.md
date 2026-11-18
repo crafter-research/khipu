@@ -2,10 +2,10 @@
 
 Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Not published. Every claim below points to a locked PREREG, a script commit and a results file in this repository.
 
-## Summary
-- Within a khipu, a cord's color predicts the magnitude of its knot value better than the same colors shuffled, and the signal is not explained by which cluster the cord sits in. It does not transfer across provenances; whether it is shared within a site is still untested. K5 confirms it against a 200-draw permutation null with a calibrated model and whole held-out clusters (+0.054 bits per cord, every null draw worse), also on KFG-verified values.
-- The best-known khipu decipherment, the Santa Valley match to a 1670 tribute census, reproduces in structure. Its exact total of 367 pesos depends on imputing two broken cords onto a measured 359. A moiety total quoted in the literature (381 or 382) is most likely a misprint for 281 or 282.
-- The Open Khipu Repository (OKR) v2.1.0 agrees with the Khipu Field Guide on 96.7% of 31,135 comparable pendant values. On three khipus it codes the tens place as hundreds.
+## Summary (revised 2026-11-18 after a hostile review and K7)
+- The color-legend claim is **withdrawn**. With the cord layout controlled (K7), color still predicts value magnitude within a khipu better than 200 shuffles, in both the Ascher and the Urton recording traditions, but by about 0.016 bits per cord, below the 0.02 we fixed beforehand. "Totals carry their own color" (K6) was an artefact of color bands and is retracted.
+- The Santa Valley match to the 1670 tribute census reproduces in structure. Urton's exact total of 367 pesos is a measured 359 plus two imputed broken cords. A moiety total quoted in the literature (381 or 382) is plausibly a misprint for 281 or 282, not yet confirmed.
+- OKR v2.1.0 codes the tens place as hundreds on KH0326 (confirmed against Urton's Appendix B). OKR and the Khipu Field Guide share a source, so their 96.7% agreement is lineage, not independent verification.
 
 ## Data
 - OKR v2.1.0 (MIT), SQLite from the GitHub tag `v2.1.0`, sha256 `607913034a0f...`. 619 khipus, 54,403 cords, 110,677 knots.
@@ -28,6 +28,7 @@ Each belief was written as a falsifiable sentence with an oracle, a null and a d
 | K4 | Values at a fixed position of seriated units trend upward | Killed | mean tau -0.071; 828 of 862 groups were single-color |
 | K5a | Local legend: color beats 200 within-cluster shuffles on held-out clusters, calibrated model | Survives (both runs) | +0.054 bits (null 95% [1.145, 1.152] vs real 1.094); clean +0.060 |
 | K5b | No color code transfers across khipus | Third outcome: real worse than null | -0.016; a cross-khipu code misleads |
+| K7 | Local legend under a layout control, in AS and UR separately | Fails in both (gain 0.016 < 0.02); K5a withdrawn | below the null in both; 75% and 58% of khipus positive |
 | K6 | Totals (sum cords) carry a color absent from their summands | Retracted (band artefact; dies under a rotation null) | 0.405 vs null [0.360, 0.383]; khipu-weighted +0.062, CI [+0.031, +0.091]; heterogeneous |
 
 Robustness (declared after the audit): on the 507 khipus whose pendants agree at least 90% with KFG, K1 T2 gives +0.083 and K2b +0.044.

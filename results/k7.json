@@ -1,0 +1,39 @@
+{
+  "AS": {
+    "cords": 5306,
+    "khipus": 56,
+    "real_bits_khipu_weighted": 0.991125596918253,
+    "null_mean": 1.006779306000049,
+    "null_95": [
+      1.0000534800573397,
+      1.0131558080634164
+    ],
+    "gain_khipu_weighted": 0.015653709081795975,
+    "share_khipus_positive": 0.75,
+    "criteria": {
+      "below_null_2_5pct": true,
+      "gain_at_least_0_02": false,
+      "share_above_half": true
+    },
+    "passes": false
+  },
+  "UR": {
+    "cords": 23230,
+    "khipus": 202,
+    "real_bits_khipu_weighted": 1.0209803200703953,
+    "null_mean": 1.0371683445911843,
+    "null_95": [
+      1.033274859449698,
+      1.040933858686346
+    ],
+    "gain_khipu_weighted": 0.016188024520789046,
+    "share_khipus_positive": 0.5841584158415841,
+    "criteria": {
+      "below_null_2_5pct": true,
+      "gain_at_least_0_02": false,
+      "share_above_half": true
+    },
+    "passes": false
+  },
+  "verdict": "fails in both: K5a withdrawn"
+}
