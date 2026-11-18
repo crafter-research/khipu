@@ -1,0 +1,72 @@
+{
+  "all": {
+    "cords": 37082,
+    "khipus": 593,
+    "cords_in_single_cluster_khipus": 1251,
+    "K5a": {
+      "bits_real": 1.094069380864069,
+      "bits_marginal": 1.5919608288030873,
+      "calibration_ok": true,
+      "null_mean": 1.1481948891066838,
+      "null_95": [
+        1.1445800645932174,
+        1.1516679849311617
+      ],
+      "gain_vs_null_mean": 0.05412550824261486,
+      "p_real_better": 0.0,
+      "below_null_2_5pct": true,
+      "inside_null_95": false
+    },
+    "K5b": {
+      "bits_real": 1.5838069377976733,
+      "bits_marginal": 1.5940875322569563,
+      "calibration_ok": true,
+      "null_mean": 1.5673574223979818,
+      "null_95": [
+        1.5621493148352725,
+        1.5721240142857629
+      ],
+      "gain_vs_null_mean": -0.016449515399691528,
+      "p_real_better": 1.0,
+      "below_null_2_5pct": false,
+      "inside_null_95": false
+    }
+  },
+  "clean": {
+    "cords": 29416,
+    "khipus": 507,
+    "cords_in_single_cluster_khipus": 1177,
+    "K5a": {
+      "bits_real": 1.071692107308666,
+      "bits_marginal": 1.6006343162148262,
+      "calibration_ok": true,
+      "null_mean": 1.1318909954876524,
+      "null_95": [
+        1.1276234598762758,
+        1.1363057911220584
+      ],
+      "gain_vs_null_mean": 0.06019888817898633,
+      "p_real_better": 0.0,
+      "below_null_2_5pct": true,
+      "inside_null_95": false
+    },
+    "K5b": {
+      "bits_real": 1.5925779878301152,
+      "bits_marginal": 1.603856021978448,
+      "calibration_ok": true,
+      "null_mean": 1.581924039603436,
+      "null_95": [
+        1.575847998622956,
+        1.5882047881249155
+      ],
+      "gain_vs_null_mean": -0.0106539482266792,
+      "p_real_better": 1.0,
+      "below_null_2_5pct": false,
+      "inside_null_95": false
+    }
+  },
+  "verdict": {
+    "K5a": "survives",
+    "K5b": "real colors worse than null"
+  }
+}

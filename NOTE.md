@@ -3,7 +3,7 @@
 Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Not published. Every claim below points to a locked PREREG, a script commit and a results file in this repository.
 
 ## Summary
-- Within a khipu, a cord's color predicts the magnitude of its knot value better than the same colors shuffled, and the signal is not explained by which cluster the cord sits in. It does not transfer across provenances; whether it is shared within a site is still untested. The significance of both surviving tests rests on a single permutation draw, so a proper permutation null is the next test.
+- Within a khipu, a cord's color predicts the magnitude of its knot value better than the same colors shuffled, and the signal is not explained by which cluster the cord sits in. It does not transfer across provenances; whether it is shared within a site is still untested. K5 confirms it against a 200-draw permutation null with a calibrated model and whole held-out clusters (+0.054 bits per cord, every null draw worse), also on KFG-verified values.
 - The best-known khipu decipherment, the Santa Valley match to a 1670 tribute census, reproduces in structure. Its exact total of 367 pesos depends on imputing two broken cords onto a measured 359. A moiety total quoted in the literature (381 or 382) is most likely a misprint for 281 or 282.
 - The Open Khipu Repository (OKR) v2.1.0 agrees with the Khipu Field Guide on 96.7% of 31,135 comparable pendant values. On three khipus it codes the tens place as hundreds.
 
@@ -26,6 +26,8 @@ Each belief was written as a falsifiable sentence with an oracle, a null and a d
 | K3.1 | Same, six-cord runs, OKR values | Killed | total 749, inflated by OKR coding on UR090 |
 | K3.2 | Same, KFG values | K3a survives, K3b and K3c killed | total 398; moieties 278/118 vs 381/86; attachment 63/69 vs 63/70 |
 | K4 | Values at a fixed position of seriated units trend upward | Killed | mean tau -0.071; 828 of 862 groups were single-color |
+| K5a | Local legend: color beats 200 within-cluster shuffles on held-out clusters, calibrated model | Survives (both runs) | +0.054 bits (null 95% [1.145, 1.152] vs real 1.094); clean +0.060 |
+| K5b | No color code transfers across khipus | Third outcome: real worse than null | -0.016; a cross-khipu code misleads |
 
 Robustness (declared after the audit): on the 507 khipus whose pendants agree at least 90% with KFG, K1 T2 gives +0.083 and K2b +0.044.
 
