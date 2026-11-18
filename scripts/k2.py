@@ -1,8 +1,13 @@
 """K2: regional color legend (K2a) and color beyond cluster membership (K2b). See PREREG-K2.md."""
 
+import os
+
+os.environ.setdefault("OMP_NUM_THREADS", "1")
+
 import json
 import sqlite3
 import sys
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 import numpy as np
@@ -56,6 +61,25 @@ def permute(df: pd.DataFrame, keys: list[str]) -> pd.DataFrame:
     return out
 
 
+CKPT = OUT / "k2a_checkpoint"
+
+
+def provenance_fold(data: pd.DataFrame, perm: pd.DataFrame, y: np.ndarray):
+    data, perm = data.reset_index(drop=True), perm.reset_index(drop=True)
+    real, null = np.zeros(len(data)), np.zeros(len(data))
+    single = 0
+    groups = data["khipu_id"].to_numpy()
+    for tr, te in LeaveOneGroupOut().split(data, groups=groups):
+        if len(np.unique(y[tr])) < 2:
+            single += 1
+            b, _ = bits_marginal(y[tr], y[te], 4)
+            real[te], null[te] = b, b
+            continue
+        real[te], _ = bits_model(data.iloc[tr], data.iloc[te], y[tr], y[te], FEATS, 4)
+        null[te], _ = bits_model(perm.iloc[tr], perm.iloc[te], y[tr], y[te], FEATS, 4)
+    return real, null, single
+
+
 def k2a(df: pd.DataFrame) -> dict:
     known = df[~df["prov"].isin(["", "unknown"])]
     per_prov = known.groupby("prov")["khipu_id"].nunique()
@@ -65,19 +89,27 @@ def k2a(df: pd.DataFrame) -> dict:
     y = value_class(data["val"])
     real, null = np.zeros(len(data)), np.zeros(len(data))
     single_class_folds = 0
-    logo = LeaveOneGroupOut()
-    for prov in eligible:
-        pidx = np.flatnonzero(data["prov"].to_numpy() == prov)
-        groups = data["khipu_id"].to_numpy()[pidx]
-        for tr_l, te_l in logo.split(pidx, groups=groups):
-            tr, te = pidx[tr_l], pidx[te_l]
-            if len(np.unique(y[tr])) < 2:
-                single_class_folds += 1
-                b, _ = bits_marginal(y[tr], y[te], 4)
-                real[te], null[te] = b, b
+    CKPT.mkdir(parents=True, exist_ok=True)
+    jobs = {}
+    with ProcessPoolExecutor() as pool:
+        for i, prov in enumerate(eligible):
+            pidx = np.flatnonzero(data["prov"].to_numpy() == prov)
+            f = CKPT / f"{i:03d}.npz"
+            if f.exists():
+                z = np.load(f)
+                real[pidx], null[pidx] = z["real"], z["null"]
+                single_class_folds += int(z["single"])
+                print(f"[K2a] {i + 1}/{len(eligible)} {prov}: from checkpoint", flush=True)
                 continue
-            real[te], _ = bits_model(data.iloc[tr], data.iloc[te], y[tr], y[te], FEATS, 4)
-            null[te], _ = bits_model(perm.iloc[tr], perm.iloc[te], y[tr], y[te], FEATS, 4)
+            fut = pool.submit(provenance_fold, data.iloc[pidx], perm.iloc[pidx], y[pidx])
+            jobs[fut] = (i, prov, pidx, f)
+        for fut in as_completed(jobs):
+            i, prov, pidx, f = jobs[fut]
+            r, n, single = fut.result()
+            np.savez(f, real=r, null=n, single=single)
+            real[pidx], null[pidx] = r, n
+            single_class_folds += single
+            print(f"[K2a] {i + 1}/{len(eligible)} {prov}: done ({len(pidx)} cords)", flush=True)
     by_prov = {}
     for prov in eligible:
         m = data["prov"].to_numpy() == prov
@@ -103,6 +135,7 @@ def k2b(df: pd.DataFrame) -> dict:
     perm = permute(df, ["khipu_id", "cluster_id"])
     y = value_class(df["val"])
     kf = KFold(n_splits=N_FOLDS, shuffle=True, random_state=SEED)
+    print("[K2b] running 5 folds x 2 variants", flush=True)
     bits, _ = run(df, y, 4, kf, df["khipu_id"].to_numpy(), {"real": (df, FEATS), "null": (perm, FEATS)})
     size = df.groupby(["khipu_id", "cluster_id"])["cord_id"].transform("size")
     return {
@@ -116,7 +149,9 @@ def k2b(df: pd.DataFrame) -> dict:
 
 def main():
     df = load()
-    res = {"rows": int(len(df)), "K2a": k2a(df), "K2b": k2b(df)}
+    print(f"[load] {len(df)} rows", flush=True)
+    res = {"rows": int(len(df)), "K2a": k2a(df)}
+    res["K2b"] = k2b(df)
     res["holm"] = holm({"K2a": res["K2a"]["gain"]["p_one_sided"], "K2b": res["K2b"]["gain"]["p_one_sided"]})
     OUT.mkdir(exist_ok=True)
     (OUT / "k2.json").write_text(json.dumps(res, indent=2))

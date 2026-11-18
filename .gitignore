@@ -2,3 +2,4 @@ data/
 __pycache__/
 .venv/
 .venv/
+results/k2a_checkpoint/
