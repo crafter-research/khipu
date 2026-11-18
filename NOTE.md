@@ -3,7 +3,7 @@
 Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Not published. Every claim below points to a locked PREREG, a script commit and a results file in this repository.
 
 ## Summary
-- Within a khipu, a cord's color predicts the magnitude of its knot value better than the same colors shuffled, and the signal is not explained by which cluster the cord sits in. It does not transfer between khipus, not even from the same site. This fits a color legend that is local to each khipu.
+- Within a khipu, a cord's color predicts the magnitude of its knot value better than the same colors shuffled, and the signal is not explained by which cluster the cord sits in. It does not transfer across provenances; whether it is shared within a site is still untested. The significance of both surviving tests rests on a single permutation draw, so a proper permutation null is the next test.
 - The best-known khipu decipherment, the Santa Valley match to a 1670 tribute census, reproduces in structure. Its exact total of 367 pesos depends on imputing two broken cords onto a measured 359. A moiety total quoted in the literature (381 or 382) is most likely a misprint for 281 or 282.
 - The Open Khipu Repository (OKR) v2.1.0 agrees with the Khipu Field Guide on 96.7% of 31,135 comparable pendant values. On three khipus it codes the tens place as hundreds.
 

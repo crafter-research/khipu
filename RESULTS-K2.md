@@ -7,9 +7,9 @@ PREREG locked in `464b70b`. Script `e228317` (same model and hyperparameters as 
 - **K2b, color beyond cluster membership: survives.** Within a khipu, real colors beat colors permuted inside each cord cluster: +0.043 bits per cord, CI [+0.031, +0.056], Holm p < 0.001. 30,258 of 37,082 cords sit in multi-cord clusters.
 
 ## Claim (combined with K1)
-Inside a khipu, a cord's color carries information about the magnitude of its value, and part of that information is not explained by which cluster the cord belongs to. That information does not transfer to other khipus, not even from the same site. The evidence fits a legend local to each khipu.
+Inside a khipu, a cord's color carries information about the magnitude of its value, and part of that information is not explained by which cluster the cord belongs to. It does not transfer across provenances (K1 T1). Whether it is shared within a site is untested (K2a).
 
-Credence: moderate for K2b. K2a is a weak test (see below), so "no regional legend" is a killed belief, not a proven negative.
+Credence: moderate for K2b. K2a is untested: its models did worse than uniform guessing.
 
 ## Caveats
 - K2a models are poorly calibrated on held-out khipus: 4.20 bits per cord with real colors and 4.12 with permuted, far above the roughly 1.6 of the marginal in K1. Small training sets overfit. The comparison is the preregistered one, but the test has little power.
