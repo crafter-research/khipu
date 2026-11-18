@@ -28,6 +28,7 @@ Each belief was written as a falsifiable sentence with an oracle, a null and a d
 | K4 | Values at a fixed position of seriated units trend upward | Killed | mean tau -0.071; 828 of 862 groups were single-color |
 | K5a | Local legend: color beats 200 within-cluster shuffles on held-out clusters, calibrated model | Survives (both runs) | +0.054 bits (null 95% [1.145, 1.152] vs real 1.094); clean +0.060 |
 | K5b | No color code transfers across khipus | Third outcome: real worse than null | -0.016; a cross-khipu code misleads |
+| K6 | Totals (sum cords) carry a color absent from their summands | Survives | 0.405 vs null [0.360, 0.383]; khipu-weighted +0.062, CI [+0.031, +0.091]; heterogeneous |
 
 Robustness (declared after the audit): on the 507 khipus whose pendants agree at least 90% with KFG, K1 T2 gives +0.083 and K2b +0.044.
 
