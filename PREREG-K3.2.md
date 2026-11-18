@@ -1,0 +1,28 @@
+# PREREG K3.2: Santa first cords vs the 1670 tribute, Khipu Field Guide values
+
+Status: LOCKED 2026-11-18. Approved by the author. Committed before the K3.2 analysis ran.
+
+## Why
+`AUDIT-OKR-KFG.md` (commit `0207f23`): OKR v2.1.0 codes tens as hundreds on UR090 (106 of 108 pendants match the Khipu Field Guide after shifting). K3.1 totals are contaminated. K3.2 repeats the K3 tests on the Khipu Field Guide (KFG) transcription. Beliefs, oracle and decision rules are those of `PREREG-K3.md`.
+
+## Data
+KFG Excel workbooks (MIT, Ashok Khosla), downloaded 2026-11-18 to `data/kfg/`:
+- KH0323 `ce0eccb9...`, KH0324 `953afdd7...`, KH0325 `19434cd8...`, KH0326 `9b71fcc1...`, KH0327 `9d3e9aed...`, KH0328 `720572a0...` (full sha256 in the run log).
+
+## Definitions (fixed now, KFG only)
+- Pendants: rows of the `Cords` sheet named `p<n>` (subsidiaries such as `p3s1` excluded).
+- Groups: from the `CordGroups` sheet, "group of N pendants (a-b)". Within each group, pendants sorted by n and cut into consecutive runs of six from the first one. Runs under six and groups of one pendant are not six-cord groups and are reported.
+- First cord: the first pendant of each run.
+- Value: the `Value` column. Attachment: the `Attachment` column (R, V, or other).
+
+## Seen before this draft (declared)
+- From KH0326 (UR090): its four groups (6, 38, 12 and 52 pendants), the values and attachments of p1 to p11, and the OKR-vs-KFG match after the shift. Since the shift maps OKR to KFG on 106 of 108 pendants, the UR090 part of the result is close to predictable from K3.1. I did not compute it.
+- Nothing from the other five workbooks.
+
+## Decision rules (unchanged)
+- K3a: survives if |total - 367| < |total - 467|.
+- K3b: survives if verso is 381 or 382 and recto is 86.
+- K3c: survives if 63 recto and 70 verso first cords. The group count is reported and compared with 133.
+
+## Extra reporting
+Per-khipu totals and attachment counts next to Medrano and Urton (2018) table 1, the value distribution, and first cords with value 0.
