@@ -26,13 +26,13 @@ def svg(lang: str) -> str:
     fmt = (lambda v: f"{v:+.3f}".replace(".", ",")) if lang == "es" else (lambda v: f"{v:+.3f}")
     tick = (lambda v: f"{v:.2f}".replace(".", ",")) if lang == "es" else (lambda v: f"{v:.2f}")
     p = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{t["axis"]}" '
-         f'style="width:100%;height:auto;font-family:var(--font-sans);font-size:12px">']
+         f'style="width:100%;height:auto;font-family:var(--font-sans);font-size:13px">']
     for v in (-0.01, 0.0, 0.01, 0.02):
         p.append(f'<line x1="{x(v):.1f}" x2="{x(v):.1f}" y1="30" y2="200" style="stroke:var(--color-border);stroke-width:1"/>')
         p.append(f'<text x="{x(v):.1f}" y="218" text-anchor="middle" style="fill:var(--color-muted)">{tick(v)}</text>')
     p.append(f'<line x1="{x(0.02):.1f}" x2="{x(0.02):.1f}" y1="30" y2="200" '
              f'style="stroke:var(--color-muted-strong);stroke-width:1.5;stroke-dasharray:4 4"/>')
-    p.append(f'<text x="{x(0.02) + 6:.1f}" y="26" style="fill:var(--color-muted-strong)">{t["min"]}</text>')
+    p.append(f'<text x="{x(0.02) - 6:.1f}" y="24" text-anchor="end" style="fill:var(--color-muted-strong)">{t["min"]}</text>')
     for row, (sub, y) in enumerate((("AS", 85), ("UR", 155))):
         p.append(f'<text x="0" y="{y + 4}" style="fill:var(--color-text);font-weight:600">{t[sub]}</text>')
         for i, g in enumerate(data[sub]["null_gain"]):
