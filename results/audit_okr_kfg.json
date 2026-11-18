@@ -1,0 +1,176 @@
+{
+  "khipus": 611,
+  "status_counts": {
+    "aligned": 545,
+    "count_mismatch": 63,
+    "no_kfg": 3
+  },
+  "aligned_pendants": 31135,
+  "aligned_exact": 30118,
+  "aligned_after_shift": 29385,
+  "khipus_exact_100pct": 416,
+  "khipus_exact_below_90pct": 29,
+  "khipus_shift_explains_10pct_plus": 3,
+  "worst_20": [
+    {
+      "okr": "KH0593",
+      "pendants": 57.0,
+      "exact": 0.0,
+      "after_shift": 0.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 57.0
+    },
+    {
+      "okr": "KH0094",
+      "pendants": 8.0,
+      "exact": 0.0,
+      "after_shift": 0.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 8.0
+    },
+    {
+      "okr": "KH0599",
+      "pendants": 120.0,
+      "exact": 8.0,
+      "after_shift": 8.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 112.0
+    },
+    {
+      "okr": "KH0274",
+      "pendants": 25.0,
+      "exact": 3.0,
+      "after_shift": 3.0,
+      "okr_gt_kfg": 11.0,
+      "okr_lt_kfg": 11.0
+    },
+    {
+      "okr": "KH0569",
+      "pendants": 100.0,
+      "exact": 13.0,
+      "after_shift": 13.0,
+      "okr_gt_kfg": 45.0,
+      "okr_lt_kfg": 42.0
+    },
+    {
+      "okr": "KH0449",
+      "pendants": 95.0,
+      "exact": 17.0,
+      "after_shift": 17.0,
+      "okr_gt_kfg": 78.0,
+      "okr_lt_kfg": 0.0
+    },
+    {
+      "okr": "KH0596",
+      "pendants": 21.0,
+      "exact": 6.0,
+      "after_shift": 6.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 15.0
+    },
+    {
+      "okr": "KH0326",
+      "pendants": 108.0,
+      "exact": 43.0,
+      "after_shift": 106.0,
+      "okr_gt_kfg": 65.0,
+      "okr_lt_kfg": 0.0
+    },
+    {
+      "okr": "KH0034",
+      "pendants": 415.0,
+      "exact": 189.0,
+      "after_shift": 189.0,
+      "okr_gt_kfg": 113.0,
+      "okr_lt_kfg": 113.0
+    },
+    {
+      "okr": "KH0439",
+      "pendants": 110.0,
+      "exact": 60.0,
+      "after_shift": 57.0,
+      "okr_gt_kfg": 24.0,
+      "okr_lt_kfg": 26.0
+    },
+    {
+      "okr": "KH0585",
+      "pendants": 19.0,
+      "exact": 11.0,
+      "after_shift": 11.0,
+      "okr_gt_kfg": 3.0,
+      "okr_lt_kfg": 5.0
+    },
+    {
+      "okr": "KH0093",
+      "pendants": 16.0,
+      "exact": 10.0,
+      "after_shift": 10.0,
+      "okr_gt_kfg": 6.0,
+      "okr_lt_kfg": 0.0
+    },
+    {
+      "okr": "KH0330",
+      "pendants": 25.0,
+      "exact": 17.0,
+      "after_shift": 17.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 8.0
+    },
+    {
+      "okr": "KH0594",
+      "pendants": 18.0,
+      "exact": 13.0,
+      "after_shift": 13.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 5.0
+    },
+    {
+      "okr": "KH0332",
+      "pendants": 4.0,
+      "exact": 3.0,
+      "after_shift": 3.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 1.0
+    },
+    {
+      "okr": "KH0472",
+      "pendants": 130.0,
+      "exact": 99.0,
+      "after_shift": 130.0,
+      "okr_gt_kfg": 31.0,
+      "okr_lt_kfg": 0.0
+    },
+    {
+      "okr": "KH0220",
+      "pendants": 30.0,
+      "exact": 23.0,
+      "after_shift": 23.0,
+      "okr_gt_kfg": 1.0,
+      "okr_lt_kfg": 6.0
+    },
+    {
+      "okr": "KH0393",
+      "pendants": 51.0,
+      "exact": 40.0,
+      "after_shift": 39.0,
+      "okr_gt_kfg": 0.0,
+      "okr_lt_kfg": 11.0
+    },
+    {
+      "okr": "KH0138",
+      "pendants": 35.0,
+      "exact": 28.0,
+      "after_shift": 28.0,
+      "okr_gt_kfg": 3.0,
+      "okr_lt_kfg": 4.0
+    },
+    {
+      "okr": "KH0401",
+      "pendants": 15.0,
+      "exact": 12.0,
+      "after_shift": 14.0,
+      "okr_gt_kfg": 2.0,
+      "okr_lt_kfg": 1.0
+    }
+  ]
+}
