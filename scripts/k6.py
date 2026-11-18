@@ -15,7 +15,7 @@ SUMS = ROOT / "data/kfg_sums"
 OUT = ROOT / "results"
 N_DRAWS = 200
 EXCLUDED = {"KH0326"}
-GROUP_RE = re.compile(r"group of (\d+) pendants? \((\d+)(?:-(\d+))?\)")
+GROUP_RE = re.compile(r"(?:group of (\d+) pendants?|^\S+\s+(\d+)) \((\d+)(?:-(\d+))?\)")
 CELL_RE = re.compile(r"(?:<b>)?(g\d+p\d+)(?:</b>)?\s*:\s*<span[^>]*><b>(-?\d+)</b></span><sub><small>([^<]*)</small></sub>")
 ROW_RE = re.compile(r"<tr><td class=\"td_sum_counter\">.*?</tr>", re.S)
 
@@ -42,9 +42,9 @@ def pendants(name: str):
     colors = dict(zip(df["Cord_Name"].str[1:].astype(int), df["Color"].astype(str).map(main_color)))
     starts = []
     for (line,) in wb["CordGroups"].iter_rows(values_only=True):
-        m = GROUP_RE.search(str(line or ""))
+        m = GROUP_RE.search(str(line or "").strip())
         if m:
-            starts.append(int(m.group(2)))
+            starts.append(int(m.group(3)))
     return colors, starts
 
 
