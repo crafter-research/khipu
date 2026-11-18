@@ -1,0 +1,33 @@
+# PREREG K5: the local color legend, with a real permutation null
+
+Status: LOCKED 2026-11-18. Approved by the author. Committed before the K5 analysis ran.
+
+## Why
+Independent review (`REVIEW-FABLE-D1.md`): the K1 T2 and K2b survivors rest on a single permutation draw, and the K1 model was worse than the marginal under shift. K5 is the restated card with a proper null and a calibrated model. It does not reuse earlier verdicts.
+
+## Beliefs
+- **K5a (primary).** Within a khipu, cord color predicts value class beyond cluster membership and position.
+- **K5b (secondary).** No color code transfers across khipus.
+
+## Data
+- OKR v2.1.0 (same sha256), one color row per cord as in K2, four value classes as in K1.
+- Two runs: all khipus, and the 507 KFG-verified khipus (pendant agreement at least 90%, `results/audit_okr_kfg.csv`). K5a must survive both.
+
+## Model (fixed now)
+- Multinomial logistic regression (scikit-learn defaults, L2, C = 1.0, max_iter 2000), one-hot features.
+- Features: the K1 allowed set plus a **local color prior**: for each cord, the value-class frequencies of cords with the same (khipu, color) in the training fold only, Laplace-smoothed, with the khipu's training marginal when the color is unseen.
+- Calibration gate: on real colors, the model must be no worse than the training-fold marginal in bits per cord. If it is worse, the run is invalid (not a kill) and is reported as such.
+
+## Splits and nulls
+- K5a: hold out whole clusters (`(khipu, cluster)` groups), 5-fold grouped CV, seed 0. The null permutes colors within each `(khipu, cluster)`, 200 draws (seeds 1 to 200). Each draw refits the full CV.
+- K5b: hold out whole khipus (5-fold grouped by khipu) without the local prior (it cannot exist for unseen khipus). The null permutes colors within each khipu, 200 draws.
+
+## Decision rules
+- K5a survives if real bits per cord are below the 2.5th percentile of the 200 null values in both runs. Killed if they fall inside the null's 95% interval in either run.
+- K5b survives if real bits per cord fall inside the null's 95% interval (no transfer). If real colors beat the null, K5b is killed: some code does transfer. Note: K5b can survive from low power. Report the null spread so its power is visible.
+- Report the gain (null mean minus real) with the 95% interval of the null, for each run.
+
+## Threats
+- The local prior uses training-fold labels of other clusters in the same khipu. That is the point of the test. Held-out clusters share no cords with training, and the null recomputes the prior from permuted colors, so the prior alone cannot produce a gain under the null.
+- Khipus with a single cluster contribute no within-khipu information. Report how many cords they hold.
+- 200 draws give a resolution of 0.005 on the permutation p-value.
