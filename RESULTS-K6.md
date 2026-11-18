@@ -6,7 +6,9 @@ PREREG locked in `907cb0a`. Scripts `9ffcbb8`, fixed in `fbf5633`; per-khipu rep
 - Colors: KFG pages show the color covering the longest stretch of a multi-segment cord, so workbook colors were normalized the same way before matching. Found while testing the parser on KH0326, before the first run.
 - **First run had a mapping bug** (`results/k6_run1_buggy_mapping.json`): single-pendant groups are written `9.0cm 1 (1)` in `CordGroups`, without "group of", so they were skipped and every later group number shifted. 2,900 of 5,837 relations failed the color check and the verdict was "killed" (0.377, inside [0.355, 0.382]). The fix brings mismatches to 43 (0.7%). The verdict below is from the fixed run. The fix is a parsing correction checked against the page's own pendant ids, not a change of design. I saw the buggy verdict before fixing.
 
-## Verdict: survives
+## Verdict: survives as preregistered, RETRACTED after review
+
+**Retracted 2026-11-18.** The preregistered null permuted colors across the whole khipu, which destroys the spatial clustering of color bands. Summands are contiguous runs, so a null that keeps bands intact (circular rotation of the color sequence) is the right one. Under it the observed 0.405 falls below the null (mean 0.422, 95% [0.411, 0.435]). See REVIEW-FABLE-TRAJECTORY.md. The numbers below are kept for the record.
 - 360 khipus, 5,773 sum relations (KH0326 excluded).
 - Share of totals whose color appears in none of their summands: **0.405**. Null (colors permuted within khipu, 200 draws): mean 0.372, 95% interval [0.360, 0.383].
 - Counting each total cord once: 0.416 vs null [0.366, 0.389].
