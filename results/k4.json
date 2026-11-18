@@ -1,0 +1,69 @@
+{
+  "khipus_with_seriated_groups": 172,
+  "confirmatory_non_santa": {
+    "groups": 862,
+    "series": 1272,
+    "constant_series_excluded": 501,
+    "mean_tau": -0.07144232693307523,
+    "null_mean": 0.00022678506523724659,
+    "null_p95": 0.026732961395282764,
+    "p_one_sided": 1.0,
+    "share_tau_pos": 0.3938679245283019,
+    "share_tau_neg": 0.5227987421383647,
+    "by_period": {
+      "2": {
+        "groups": 844,
+        "series": 1198,
+        "mean_tau": -0.08863423208378972
+      },
+      "3": {
+        "groups": 9,
+        "series": 21,
+        "mean_tau": 0.10397635328915589
+      },
+      "4": {
+        "groups": 5,
+        "series": 15,
+        "mean_tau": 0.4987156636906177
+      },
+      "6": {
+        "groups": 1,
+        "series": 6,
+        "mean_tau": 0.11111111111111112
+      },
+      "8": {
+        "groups": 1,
+        "series": 8,
+        "mean_tau": -0.41666666666666663
+      },
+      "12": {
+        "groups": 2,
+        "series": 24,
+        "mean_tau": 0.3463166029059804
+      }
+    }
+  },
+  "non_blind_santa": {
+    "groups": 31,
+    "series": 50,
+    "constant_series_excluded": 12,
+    "mean_tau": 0.011986393140884765,
+    "null_mean": 0.0012463945294843622,
+    "null_p95": 0.14404013329139187,
+    "p_one_sided": 0.4545,
+    "share_tau_pos": 0.32,
+    "share_tau_neg": 0.4,
+    "by_period": {
+      "2": {
+        "groups": 31,
+        "series": 50,
+        "mean_tau": 0.011986393140884765
+      }
+    }
+  },
+  "confirmatory_khipu_weighted": {
+    "khipus": 162,
+    "mean_of_khipu_mean_tau": -0.10149905455832747,
+    "share_khipus_positive": 0.345679012345679
+  }
+}
