@@ -1,0 +1,346 @@
+{
+  "rows": 37082,
+  "K2a": {
+    "provenances": 35,
+    "khipus": 368,
+    "cords": 24506,
+    "single_class_train_folds": 7,
+    "bits_real": 4.203313659357062,
+    "bits_null": 4.122256345480003,
+    "gain": {
+      "gain_bits_per_cord": -0.08105731387705954,
+      "ci95": [
+        -0.20331988242826168,
+        0.03194854798173324
+      ],
+      "p_one_sided": 0.925
+    },
+    "by_provenance": {
+      "\"Chancay, Central Coast\"": {
+        "khipus": 5,
+        "cords": 81,
+        "gain_bits_per_cord": -0.23161903795236682,
+        "recorders": [
+          "eric",
+          "gurton"
+        ]
+      },
+      "\"Cieneguilla, Valle de Lurin\"": {
+        "khipus": 2,
+        "cords": 12,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "gurton"
+        ]
+      },
+      "\"Huaca Perez, Lima (a.k.a Hda. Infantas and Tambo Inca)\"": {
+        "khipus": 3,
+        "cords": 414,
+        "gain_bits_per_cord": -0.04952101969401923,
+        "recorders": [
+          "gurton"
+        ]
+      },
+      "\"Ica Valley, near Callango\"": {
+        "khipus": 2,
+        "cords": 244,
+        "gain_bits_per_cord": -0.015474744072035307,
+        "recorders": [
+          "gurton"
+        ]
+      },
+      "\"Playa Miller #6, Arica, Chile\"": {
+        "khipus": 5,
+        "cords": 384,
+        "gain_bits_per_cord": 0.07522023271654099,
+        "recorders": [
+          "chandra",
+          "tania"
+        ]
+      },
+      "\"Pueblo Libre, Lima, Peru\"": {
+        "khipus": 3,
+        "cords": 103,
+        "gain_bits_per_cord": 0.13159545184439825,
+        "recorders": [
+          "leah"
+        ]
+      },
+      "Armatambo, Huaca San Pedro": {
+        "khipus": 11,
+        "cords": 339,
+        "gain_bits_per_cord": -0.12204470009013857,
+        "recorders": [
+          "jclindaniel"
+        ]
+      },
+      "Atarco": {
+        "khipus": 6,
+        "cords": 218,
+        "gain_bits_per_cord": 0.18798975037659027,
+        "recorders": [
+          "cbrezine"
+        ]
+      },
+      "Between Ica and Pisco": {
+        "khipus": 8,
+        "cords": 486,
+        "gain_bits_per_cord": 0.2127949248751282,
+        "recorders": [
+          "katie"
+        ]
+      },
+      "Cajamarquilla": {
+        "khipus": 4,
+        "cords": 50,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "gurton",
+          "julia"
+        ]
+      },
+      "Chuquitanta": {
+        "khipus": 4,
+        "cords": 266,
+        "gain_bits_per_cord": 0.3562465465992446,
+        "recorders": [
+          "gurton",
+          "katie"
+        ]
+      },
+      "Costa Sur": {
+        "khipus": 2,
+        "cords": 427,
+        "gain_bits_per_cord": 0.24741446270457068,
+        "recorders": [
+          "julia"
+        ]
+      },
+      "Hacienda Ullujalla y Callengo": {
+        "khipus": 7,
+        "cords": 321,
+        "gain_bits_per_cord": 0.125453243074249,
+        "recorders": [
+          "eric",
+          "gurton",
+          "julia",
+          "leah"
+        ]
+      },
+      "Huaca San Pedro, Armatambo": {
+        "khipus": 2,
+        "cords": 207,
+        "gain_bits_per_cord": -0.003062910633889082,
+        "recorders": [
+          "jclindaniel"
+        ]
+      },
+      "Huacho": {
+        "khipus": 6,
+        "cords": 478,
+        "gain_bits_per_cord": 0.09279773033258998,
+        "recorders": [
+          "gurton",
+          "leah",
+          "tania"
+        ]
+      },
+      "Huaquerones": {
+        "khipus": 16,
+        "cords": 472,
+        "gain_bits_per_cord": 0.058240429220973944,
+        "recorders": [
+          "cbrezine"
+        ]
+      },
+      "Ica": {
+        "khipus": 48,
+        "cords": 2195,
+        "gain_bits_per_cord": -0.5551232631717129,
+        "recorders": [
+          "gurton",
+          "katie"
+        ]
+      },
+      "Ica/Pisco": {
+        "khipus": 3,
+        "cords": 342,
+        "gain_bits_per_cord": -1.5826660292054324,
+        "recorders": [
+          "gurton"
+        ]
+      },
+      "Incahuasi": {
+        "khipus": 52,
+        "cords": 4063,
+        "gain_bits_per_cord": -0.10744359777412305,
+        "recorders": [
+          "gurton",
+          "jclindaniel",
+          "julia"
+        ]
+      },
+      "Leymebamba": {
+        "khipus": 22,
+        "cords": 3606,
+        "gain_bits_per_cord": -0.03963258397670799,
+        "recorders": [
+          "cbrezine",
+          "gurton",
+          "katie"
+        ]
+      },
+      "Lluta Valley": {
+        "khipus": 4,
+        "cords": 605,
+        "gain_bits_per_cord": -0.5139018248216107,
+        "recorders": [
+          "cbrezine",
+          "katie"
+        ]
+      },
+      "Marquez": {
+        "khipus": 6,
+        "cords": 174,
+        "gain_bits_per_cord": 0.5284549370894744,
+        "recorders": [
+          "cbrezine",
+          "katie"
+        ]
+      },
+      "Nazca": {
+        "khipus": 13,
+        "cords": 2095,
+        "gain_bits_per_cord": 0.19764080496331005,
+        "recorders": [
+          "chandra",
+          "katie",
+          "tania"
+        ]
+      },
+      "Ocucaje": {
+        "khipus": 4,
+        "cords": 223,
+        "gain_bits_per_cord": -1.7468717623925425,
+        "recorders": [
+          "gurton",
+          "katie"
+        ]
+      },
+      "Pachacamac": {
+        "khipus": 87,
+        "cords": 4191,
+        "gain_bits_per_cord": 0.007905583739715727,
+        "recorders": [
+          "gurton",
+          "julia",
+          "katie",
+          "tania"
+        ]
+      },
+      "Paracas": {
+        "khipus": 7,
+        "cords": 596,
+        "gain_bits_per_cord": 0.16471792084358405,
+        "recorders": [
+          "chandra",
+          "tania"
+        ]
+      },
+      "Peru": {
+        "khipus": 5,
+        "cords": 254,
+        "gain_bits_per_cord": -0.2811065644374011,
+        "recorders": [
+          "cbrezine",
+          "leah"
+        ]
+      },
+      "Pisco": {
+        "khipus": 3,
+        "cords": 117,
+        "gain_bits_per_cord": -0.0012226287900323207,
+        "recorders": [
+          "gurton"
+        ]
+      },
+      "Rancho San Juan, Ica Valley": {
+        "khipus": 2,
+        "cords": 50,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "cbrezine",
+          "eric",
+          "leah"
+        ]
+      },
+      "Santa": {
+        "khipus": 6,
+        "cords": 906,
+        "gain_bits_per_cord": 0.2990975463249397,
+        "recorders": [
+          "cbrezine"
+        ]
+      },
+      "Tambo Colorado": {
+        "khipus": 3,
+        "cords": 24,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "eric"
+        ]
+      },
+      "Ullujaya, Ocucaje, Ica": {
+        "khipus": 2,
+        "cords": 83,
+        "gain_bits_per_cord": -3.4621352207591016,
+        "recorders": [
+          "julia"
+        ]
+      },
+      "Unknown": {
+        "khipus": 2,
+        "cords": 49,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "gurton",
+          "tania"
+        ]
+      },
+      "Valle de Ica Hacienda Callango Ocucaje": {
+        "khipus": 8,
+        "cords": 351,
+        "gain_bits_per_cord": 0.255231905687348,
+        "recorders": [
+          "eric"
+        ]
+      },
+      "near Lima": {
+        "khipus": 5,
+        "cords": 80,
+        "gain_bits_per_cord": 0.0,
+        "recorders": [
+          "katie"
+        ]
+      }
+    }
+  },
+  "K2b": {
+    "cords": 37082,
+    "cords_in_multicord_clusters": 30258,
+    "bits_real": 1.299286542438022,
+    "bits_null": 1.342335706874138,
+    "gain": {
+      "gain_bits_per_cord": 0.043049164436115825,
+      "ci95": [
+        0.031211650393763942,
+        0.05648225501138971
+      ],
+      "p_one_sided": 0.0
+    }
+  },
+  "holm": {
+    "K2b": 0.0,
+    "K2a": 0.925
+  }
+}
