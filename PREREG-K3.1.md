@@ -1,0 +1,28 @@
+# PREREG K3.1: Santa first cords vs the 1670 tribute, with corrected groups
+
+Status: LOCKED 2026-11-18. Approved by the author. Committed before the K3.1 analysis ran.
+
+## Why a new PREREG
+K3 (`RESULTS-K3.md`, commit `a1bfee2`) failed on its group definition: OKR stores the color bands that span several six-cord groups as one cluster, so only 39 of the 133 groups were found. Context, beliefs, oracle and decision rules are the same as in `PREREG-K3.md`. Only the group definition changes.
+
+## Seen before this draft (declared)
+- Cluster sizes of Santa level-1 cords: 20 clusters of 1, 39 of 6, 3 of 12, 3 of 24, and one each of 36, 38, 42, 48, 52, 54, 60, plus 2 of 66.
+- Chunking those sizes into runs of six gives exactly 133 complete groups (38 and 52 leave remainders of 2 and 4). I computed this from the sizes above. **The K3c group count is therefore no longer a blind test.** The recto/verso split of the first cords in the new groups has not been computed.
+- First-cord values of the 39 groups from K3: 34 recto cords on UR087 with value 1, 4 verso cords on UR089 with value 4, 1 verso cord on UR090 with value 5. Total 55. These 39 groups are part of the 133.
+
+## Group definition (fixed now)
+- Santa khipus and level-1 cords as in K3.
+- Within each `(khipu, cluster)`, sort cords by `CORD_ORDINAL` ascending and cut them into consecutive runs of six starting from the first cord. A run with fewer than six cords is not a group and is reported.
+- Single-cord clusters are not groups and are reported.
+- First cord: the first cord of each run.
+- Assumption: OKR `CORD_ORDINAL` follows the standard reading order (from the knotted end of the primary cord), as used by Medrano and Urton (2018). If the remainders of the 38 and 52 clusters fall in the middle of a band instead of at an end, report it.
+
+## Beliefs and decision rules (unchanged from K3)
+- K3a: survives if |total - 367| < |total - 467|.
+- K3b: survives if the verso total is 381 or 382 and the recto total is 86.
+- K3c: survives if there are 63 recto and 70 verso first cords. The count of 133 is reported but not scored (see above).
+
+## Extra reporting
+- Totals per khipu and per attachment, next to Medrano and Urton (2018) table 1.
+- Distribution of first-cord values (the papers report a range from 0 to 13 pesos).
+- Broken first cords, and first cords with no knots, counted separately.
