@@ -1,0 +1,163 @@
+{
+  "sha256": {
+    "KH0323": "ce0eccb961fd50dcabdd5d604421d0becf2281e769d99563340b4cdf9592b325",
+    "KH0324": "953afdd7c49182f87d450c6bb4997eb677289cba2fc9695ae9e8bb43c4bfed44",
+    "KH0325": "19434cd88fb4b3dfd2c98476555b237f1fcd05d8689e3b07ada31bf4abd82ac1",
+    "KH0326": "9b71fcc1129db47a59cacb0d964a590423cff4a88d3ffdcfdc92f384eadf952a",
+    "KH0327": "9d3e9aed3a15ee2657741dbef84810743bbb58cde18240bdf9e47f05eb95ffc4",
+    "KH0328": "720572a02616f424b74890b2b0b76953f287e5cec45cfd06a1f5fafecf070d68"
+  },
+  "groups": 133,
+  "structure_notes": [
+    {
+      "khipu": "UR090",
+      "group": "7-44",
+      "remainder": 2
+    },
+    {
+      "khipu": "UR090",
+      "group": "57-108",
+      "remainder": 4
+    }
+  ],
+  "first_cords_value_missing": 0,
+  "first_cords_value_zero": 14,
+  "first_cords_broken": 8,
+  "K3a": {
+    "total": 398,
+    "diff_to_367": 31,
+    "diff_to_467": -69,
+    "survives": true
+  },
+  "K3b": {
+    "verso_total": 278,
+    "recto_total": 118,
+    "survives": false
+  },
+  "K3c": {
+    "recto_first": 63,
+    "verso_first": 69,
+    "other": 1,
+    "survives": false
+  },
+  "per_khipu": [
+    {
+      "inv": "UR087",
+      "groups": 48,
+      "recto": 48,
+      "verso": 0,
+      "mu2018_recto_verso": [
+        48,
+        0
+      ],
+      "value_sum": 57,
+      "values": {
+        "1": 47,
+        "10": 1
+      }
+    },
+    {
+      "inv": "UR088",
+      "groups": 9,
+      "recto": 0,
+      "verso": 9,
+      "mu2018_recto_verso": [
+        0,
+        9
+      ],
+      "value_sum": 80,
+      "values": {
+        "0": 1,
+        "9": 6,
+        "13": 2
+      }
+    },
+    {
+      "inv": "UR089",
+      "groups": 34,
+      "recto": 0,
+      "verso": 34,
+      "mu2018_recto_verso": [
+        0,
+        34
+      ],
+      "value_sum": 101,
+      "values": {
+        "0": 5,
+        "1": 6,
+        "3": 2,
+        "4": 16,
+        "5": 5
+      }
+    },
+    {
+      "inv": "UR090",
+      "groups": 17,
+      "recto": 6,
+      "verso": 11,
+      "mu2018_recto_verso": [
+        5,
+        12
+      ],
+      "value_sum": 113,
+      "values": {
+        "0": 2,
+        "4": 3,
+        "5": 6,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "12": 1,
+        "15": 1,
+        "23": 1
+      }
+    },
+    {
+      "inv": "UR091",
+      "groups": 15,
+      "recto": 0,
+      "verso": 15,
+      "mu2018_recto_verso": [
+        0,
+        15
+      ],
+      "value_sum": 36,
+      "values": {
+        "0": 6,
+        "4": 9
+      }
+    },
+    {
+      "inv": "UR092",
+      "groups": 10,
+      "recto": 9,
+      "verso": 0,
+      "mu2018_recto_verso": [
+        10,
+        0
+      ],
+      "value_sum": 11,
+      "values": {
+        "1": 9,
+        "2": 1
+      }
+    }
+  ],
+  "first_cord_values": {
+    "0": 14,
+    "1": 62,
+    "2": 1,
+    "3": 2,
+    "4": 28,
+    "5": 11,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 6,
+    "10": 1,
+    "12": 1,
+    "13": 2,
+    "15": 1,
+    "23": 1
+  }
+}
