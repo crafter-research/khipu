@@ -1,4 +1,4 @@
-"""K7: local color legend under a layout control, separately in AS and UR khipus. See PREREG-K7.md."""
+"""K7: local color legend under a layout control, separately in AS and UR khipus. See prereg/K7.md."""
 
 import os
 

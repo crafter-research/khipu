@@ -7,7 +7,7 @@ Read-only review of commits, PREREGs, results, scripts and data.
 - Scripts were often written at the same time as the lock (K3.1 same mtime; K4 1 s; K5 22 s). The lock precedes results, not the executable design.
 - K5 is the third test of the same hypothesis on the same cords (K1 T2, K2b, K5a). `robust_clean.json` showed the result on the clean subset before K5 was locked. K5 changed the prior after the lock and saw one fold.
 - K6: "killed" was seen, then the fix flipped it to "survives". Color normalization was also after the lock.
-- K3 needed three definitions before K3a "survived" on a trivial rule. RECONCILE-URTON is post-hoc accounting.
+- K3 needed three definitions before K3a "survived" on a trivial rule. notes/reconcile-urton.md is post-hoc accounting.
 - About 15 tests; Holm applied only inside K1 and K2. No global correction.
 
 ## Technical (checked by the reviewer)
@@ -25,7 +25,7 @@ Read-only review of commits, PREREGs, results, scripts and data.
 5. 381 as a misprint for 281 (low-medium).
 6. Color marks totals (near zero).
 
-## Proposed next test: K7 (see PREREG-K7.md)
+## Proposed next test: K7 (see prereg/K7.md)
 Local legend under a layout control, replicated separately in Ascher (AS) and Urton (UR) khipus.
 
 ## Publish?

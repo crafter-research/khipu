@@ -1,6 +1,6 @@
 # Independent review of card D1 (Fable, claude-fable-5-2), 2026-11-18
 
-Reviewer read PREREG, PREREG-K2, scripts, results JSON and the audit. It did not read RESULTS or NOTE files.
+Reviewer read the K1 and K2 preregistrations, scripts, results JSON and the audit. It did not read the reports or the summary.
 
 ## Verdict
 - D1 is killed on its own terms for what was tested: K1 T1 gain is negative (-0.207 vs marginal, -0.076 vs null).

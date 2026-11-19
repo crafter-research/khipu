@@ -1,4 +1,4 @@
-"""K3.1: Santa first cords vs the 1670 tribute, six-cord runs within clusters. See PREREG-K3.1.md."""
+"""K3.1: Santa first cords vs the 1670 tribute, six-cord runs within clusters. See prereg/K3.1.md."""
 
 import json
 import sqlite3

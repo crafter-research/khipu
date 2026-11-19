@@ -1,4 +1,4 @@
-"""K2: regional color legend (K2a) and color beyond cluster membership (K2b). See PREREG-K2.md."""
+"""K2: regional color legend (K2a) and color beyond cluster membership (K2b). See prereg/K2.md."""
 
 import os
 

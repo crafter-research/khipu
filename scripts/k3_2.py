@@ -1,4 +1,4 @@
-"""K3.2: Santa first cords vs the 1670 tribute, Khipu Field Guide values. See PREREG-K3.2.md."""
+"""K3.2: Santa first cords vs the 1670 tribute, Khipu Field Guide values. See prereg/K3.2.md."""
 
 import hashlib
 import json

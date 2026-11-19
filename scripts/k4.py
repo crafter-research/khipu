@@ -1,4 +1,4 @@
-"""K4: do values at a fixed position of seriated units trend upward? See PREREG-K4.md."""
+"""K4: do values at a fixed position of seriated units trend upward? See prereg/K4.md."""
 
 import json
 import re

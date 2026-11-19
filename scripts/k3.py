@@ -1,4 +1,4 @@
-"""K3: Santa Valley first cords vs the 1670 tribute. See PREREG-K3.md."""
+"""K3: Santa Valley first cords vs the 1670 tribute. See prereg/K3.md."""
 
 import json
 import sqlite3

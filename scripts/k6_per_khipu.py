@@ -1,4 +1,4 @@
-"""K6 per-khipu report required by PREREG-K6 (each khipu weighted equally)."""
+"""K6 per-khipu report required by prereg/K6.md (each khipu weighted equally)."""
 
 import json
 import sys

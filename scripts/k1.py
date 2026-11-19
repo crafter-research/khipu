@@ -1,4 +1,4 @@
-"""K1: do non-numeric cord attributes predict knot values? See PREREG.md."""
+"""K1: do non-numeric cord attributes predict knot values? See prereg/K1.md."""
 
 import json
 import sqlite3

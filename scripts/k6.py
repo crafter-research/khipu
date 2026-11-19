@@ -1,4 +1,4 @@
-"""K6: do sum cords (totals) have a color absent from their summands? See PREREG-K6.md."""
+"""K6: do sum cords (totals) have a color absent from their summands? See prereg/K6.md."""
 
 import json
 import re

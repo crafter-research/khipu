@@ -4,12 +4,18 @@ Preregistered tests on Inka khipus by [Crafter Research](https://crafter.ing), L
 
 Question: does the colour of a khipu cord tell you anything about the number knotted on it? Short answer after seven tests: a small, consistent signal inside each khipu (0.016 bits per cord with the layout controlled), below the 0.02 minimum we fixed beforehand, so we withdrew the "colour legend" claim. Write-up: [crafter.ing/research/khipu-colour-legend](https://crafter.ing/research/khipu-colour-legend).
 
-## Read in this order
-1. `NOTE.md`: summary and the table of every test.
-2. `PREREG-K*.md`: each belief, oracle, null and kill condition, committed before its analysis.
-3. `RESULTS-K*.md`: verdicts, deviations and what was seen before locking.
-4. `REVIEW-FABLE-D1.md`, `REVIEW-FABLE-TRAJECTORY.md`: independent reviews that changed verdicts.
-5. `AUDIT-OKR-KFG.md`, `RECONCILE-URTON.md`: data audit and the Santa Valley reconciliation.
+## Layout
+```
+notes/      summary of every test, the data audit and the Santa Valley reconciliation
+prereg/     one preregistration per test (K1 to K7), each committed before its analysis
+reports/    verdicts, deviations and what was seen before locking, one per test
+reviews/    independent reviews that changed verdicts
+scripts/    analysis and data-fetching scripts
+results/    committed outputs of each run (JSON, CSV)
+data/       downloaded sources, not committed
+```
+
+Start with `notes/summary.md`.
 
 ## Reproduce
 Requires [uv](https://docs.astral.sh/uv/).
@@ -38,4 +44,4 @@ Raw data is not committed; it downloads from its public sources. Results in `res
 - If you use or mention this work, cite it as in `CITATION.cff` (GitHub shows a "Cite this repository" button), or use the credit line "Crafter Research (2026), Khipu colours and numbers, https://github.com/crafter-research/khipu".
 
 ## History note
-On 2026-11-18, before the first push, author emails in the local history were normalized to a GitHub noreply address. Commit dates were preserved, commit hashes changed, and every hash cited in the Markdown files was updated to the new one in the commit that follows. Before that day the repository had no remote, so lock times rest on this history alone.
+On 2026-11-18, before the first push, author emails in the local history were normalized to a GitHub noreply address. Commit dates were preserved, commit hashes changed, and every hash cited in the Markdown files was updated to the new one in the commit that follows. Later the same day the documents moved into folders (prereg, reports, reviews, notes) with git mv, and file references were updated in a separate commit. Before that day the repository had no remote, so lock times rest on this history alone.

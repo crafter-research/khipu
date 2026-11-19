@@ -1,4 +1,4 @@
-"""K5: local color legend with a 200-draw permutation null and a calibrated model. See PREREG-K5.md."""
+"""K5: local color legend with a 200-draw permutation null and a calibrated model. See prereg/K5.md."""
 
 import os
 
