@@ -1,8 +1,14 @@
-# khipu
+# Khipu colours and numbers
 
-Preregistered tests on Inka khipus by [Crafter Research](https://crafter.ing), Lima.
+Preregistered analyses of colour and numerical value in Inka khipus, by [Crafter Research](https://crafter.ing), Lima.
 
-Question: does the colour of a khipu cord tell you anything about the number knotted on it? Short answer after seven tests: a small, consistent signal inside each khipu (0.016 bits per cord with the layout controlled), below the 0.02 minimum we fixed beforehand, so we withdrew the "colour legend" claim. Write-up: [crafter.ing/research/khipu-colour-legend](https://crafter.ing/research/khipu-colour-legend).
+## Findings
+
+- **Measurement.** Within a khipu, cord colour carries 0.016 bits per cord of information about the magnitude of the cord's value once cord layout is controlled. The effect replicates in both major recording traditions (Ascher and Urton) and exceeds 200 within-cluster permutations in each, but falls below the 0.02 bits threshold set for a colour legend.
+- **Replication.** The Santa Valley match to the 1670 tribute census of San Pedro de Corongo reproduces in structure. The published total of 367 pesos corresponds to a position-one sum of 359 plus two imputed broken cords (Urton 2017, Appendix B).
+- **Data correction.** Open Khipu Repository v2.1.0 records tens-place single knots as hundreds on KH0326, confirmed against Urton's appendix; the same pattern appears on KH0472 and KH0401.
+
+Write-up: [crafter.ing/research/khipu-colour-legend](https://crafter.ing/research/khipu-colour-legend). Tool: [khipu-null](https://github.com/crafter-research/khipu-null).
 
 ## Layout
 ```
