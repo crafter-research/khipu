@@ -21,7 +21,7 @@ def svg(out_dir: Path, lang: str, n: int = 30) -> str:
     s = json.loads((out_dir / "summary.json").read_text())
     tx = TXT[lang]
     W, H, L, R, T, B = 720, 300, 60, 20, 30, 60
-    y0, y1 = 0.80, 1.005
+    y0, y1 = 0.75, 1.005
     x = lambda r: L + (r - 0.5) / n * (W - L - R)  # noqa: E731
     y = lambda v: T + (y1 - v) / (y1 - y0) * (H - T - B)  # noqa: E731
     dec = (lambda v: f"{v:.2f}".replace(".", ",")) if lang == "es" else (lambda v: f"{v:.2f}")
@@ -33,8 +33,10 @@ def svg(out_dir: Path, lang: str, n: int = 30) -> str:
     lo, hi = s["null_top_mean_95"]
     p.append(f'<rect x="{x(1) - 8:.1f}" y="{y(hi):.1f}" width="{x(6) - x(1) + 16:.1f}" height="{y(lo) - y(hi):.1f}" '
              f'rx="3" style="fill:var(--color-muted);opacity:0.18"/>')
-    p.append(f'<text x="{x(6) + 14:.1f}" y="{y((lo + hi) / 2) + 4:.1f}" style="fill:var(--color-muted-strong)">{tx["band"]}</text>')
+    p.append(f'<text x="{x(1) - 8:.1f}" y="{y(lo) + 16:.1f}" style="fill:var(--color-muted-strong)">{tx["band"]}</text>')
     for r in t.itertuples():
+        if r.score < y0:
+            continue
         santa = r.khipu_id in SANTA
         style = "fill:var(--color-accent)" if santa else "fill:var(--color-muted);opacity:0.6"
         rad = 6 if santa else 4
