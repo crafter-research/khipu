@@ -1,6 +1,6 @@
 # K6 results (2026-11-18)
 
-PREREG locked in `582134a`. Scripts `be688c7`, fixed in `3245e9c`; per-khipu report `scripts/k6_per_khipu.py`. Outputs `results/k6.json`, `results/k6_per_khipu.json`. KFG sum pages: 370 of 619 khipus have one (249 return 404).
+PREREG locked in `79b0ddb`. Scripts `05e7959`, fixed in `b1cf366`; per-khipu report `scripts/k6_per_khipu.py`. Outputs `results/k6.json`, `results/k6_per_khipu.json`. KFG sum pages: 370 of 619 khipus have one (249 return 404).
 
 ## Deviations (declared)
 - Colors: KFG pages show the color covering the longest stretch of a multi-segment cord, so workbook colors were normalized the same way before matching. Found while testing the parser on KH0326, before the first run.

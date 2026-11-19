@@ -1,6 +1,6 @@
 # K1 results (2026-11-17)
 
-Run: commit `ee39487`, output `results/k1.json`. PREREG locked in `78fab74` before any outcome analysis.
+Run: commit `9cd48a3`, output `results/k1.json`. PREREG locked in `10b5b89` before any outcome analysis.
 
 ## Verdict
 - **Primary belief (T1, held out by provenance): killed.** The model is worse than the marginal baseline (-0.207 bits per cord, CI [-0.275, -0.133]) and worse than the permuted-color null (-0.076, CI [-0.099, -0.052]). The color-to-value mapping learned in some provenances misleads in others.

@@ -1,6 +1,6 @@
 # K4 results (2026-11-18)
 
-PREREG locked in `115e1b0`, script `c4aa8bc`, output `results/k4.json`.
+PREREG locked in `1998bf6`, script `fd8ee26`, output `results/k4.json`.
 
 ## Verdict: killed, and the definition did not capture what it meant to
 - Confirmatory set (non-Santa): 862 groups, 1,272 non-constant series. Mean Kendall tau **-0.071**; the shuffled-order null averages +0.0002 with a 95th percentile of +0.027. One-sided p for an upward trend = 1.0. **Killed.**

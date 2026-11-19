@@ -1,6 +1,6 @@
 # K3.2 results (2026-11-18)
 
-PREREG locked in `539a525`, script `b07f7f0`, output `results/k3_2.json`. Values from the Khipu Field Guide workbooks (sha256 in the JSON).
+PREREG locked in `9239b4b`, script `bff85d0`, output `results/k3_2.json`. Values from the Khipu Field Guide workbooks (sha256 in the JSON).
 
 ## Verdict
 - **K3a (total): survives.** The 133 first cords add up to **398**: 31 above the revisita's 367 and 69 below 467. Closer to 367, as the rule asks. But 398 is 8% above 367, not a close match.

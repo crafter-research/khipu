@@ -3,7 +3,7 @@
 Status: LOCKED 2026-11-17. Approved by the author. Committed before any K2 analysis.
 
 ## Context
-K1 (`RESULTS.md`, commit `4984767`): no color-to-value code transfers across provenances; within a khipu, real colors beat permuted colors by +0.085 bits per cord. K2 asks two new questions. It does not reuse K1's verdicts.
+K1 (`RESULTS.md`, commit `718e8f9`): no color-to-value code transfers across provenances; within a khipu, real colors beat permuted colors by +0.085 bits per cord. K2 asks two new questions. It does not reuse K1's verdicts.
 
 ## Beliefs
 - **K2a, regional legend.** A model trained only on other khipus from the same provenance predicts a held-out khipu's value classes better with real colors than with colors permuted within each khipu.

@@ -1,6 +1,6 @@
 # K3 results (2026-11-18)
 
-PREREG locked in `a38bcd2`, script `6f5ea02`, output `results/k3.json`.
+PREREG locked in `bfcac9e`, script `00d41b6`, output `results/k3.json`.
 
 ## Verdict: the test did not run as intended
 The preregistered definition of a six-cord group (an OKR `CLUSTER_ID` with exactly six level-1 cords) does not reconstruct the groups in the papers. OKR has 39 such clusters, not 133. Most Santa level-1 cords sit in larger clusters of 12, 24, 36, 42, 48, 54, 60 or 66 cords, which are multiples of six, plus two clusters of 38 and 52 and 20 single cords. OKR seems to record the color bands that span several six-cord groups as one cluster.

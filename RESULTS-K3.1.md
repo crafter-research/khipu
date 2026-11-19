@@ -1,6 +1,6 @@
 # K3.1 results (2026-11-18)
 
-PREREG locked in `82cd903`, script `d66c5cb`, output `results/k3_1.json`.
+PREREG locked in `cb6cca1`, script `fc26b5c`, output `results/k3_1.json`.
 
 ## Verdict
 - **K3c (attachment split): killed by one cord.** 63 recto, 69 verso, 1 with unrecorded attachment, against 63 and 70 in Medrano and Urton (2018). Per khipu, UR087, UR088, UR089 and UR091 match their table 1 exactly. UR090 gives 6 recto and 11 verso (published 5 and 12). UR092 gives 9 recto and 1 unrecorded (published 10 and 0). The 133 groups appear, but that count was not blind.

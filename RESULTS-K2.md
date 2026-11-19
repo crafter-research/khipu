@@ -1,6 +1,6 @@
 # K2 results (2026-11-18)
 
-PREREG locked in `6ed4644`. Script `822895f` (same model and hyperparameters as K1; single-threaded fits, provenances in parallel, per-provenance checkpoints). Output `results/k2.json`. Rows: 37,082 (K1's 7 duplicate rows fixed).
+PREREG locked in `0203801`. Script `53ad75a` (same model and hyperparameters as K1; single-threaded fits, provenances in parallel, per-provenance checkpoints). Output `results/k2.json`. Rows: 37,082 (K1's 7 duplicate rows fixed).
 
 ## Verdict
 - **K2a, regional legend: untested (reclassified 2026-11-18 after independent review, see REVIEW-FABLE-D1.md; the models score 4.2 bits on a 4-class task, worse than a uniform guess at 2.0).** Original verdict was killed. Training only on other khipus from the same provenance, real colors do not beat colors permuted within each khipu: gain -0.081 bits per cord, CI [-0.203, +0.032], Holm p = 0.93. 35 provenances, 368 khipus, 24,506 cords.

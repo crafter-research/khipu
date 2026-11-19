@@ -1,6 +1,6 @@
 # K5 results (2026-11-18)
 
-PREREG locked in `83e6845`. Script commit after the lock (local prior made leave-own-cluster-out for training rows and vectorized before the first run). Output `results/k5.json`, per-draw checkpoints in `results/k5_ckpt/` (not committed). Runtime about 10 minutes.
+PREREG locked in `897a622`. Script commit after the lock (local prior made leave-own-cluster-out for training rows and vectorized before the first run). Output `results/k5.json`, per-draw checkpoints in `results/k5_ckpt/` (not committed). Runtime about 10 minutes.
 
 Declared: a timing check before the run printed the real-color bits of one K5a fold (1.072 vs marginal 1.583). Nothing in the design changed after it.
 
