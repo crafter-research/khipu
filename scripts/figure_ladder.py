@@ -43,7 +43,8 @@ def svg(lang: str) -> str:
         p.append(f'<text x="{L - 12}" y="{y + bh / 2 + 4:.0f}" text-anchor="end" style="fill:var(--color-text)">{label}</text>')
         p.append(f'<rect x="{L}" y="{y}" width="{x(val) - L:.1f}" height="{bh}" rx="4" '
                  f'style="fill:var(--color-accent);opacity:{1 if i == len(v) - 1 else 0.55}"/>')
-        p.append(f'<text x="{x(val) + 8:.1f}" y="{y + bh / 2 + 4:.0f}" style="fill:var(--color-muted-strong)">{dec(val)}</text>')
+        lx = max(x(val), x(0.02)) + 8
+        p.append(f'<text x="{lx:.1f}" y="{y + bh / 2 + 4:.0f}" style="fill:var(--color-muted-strong)">{dec(val)}</text>')
     yb = top + len(v) * (bh + gap) - gap + 6
     p.append(f'<line x1="{x(0.02):.1f}" x2="{x(0.02):.1f}" y1="{top - 10}" y2="{yb}" '
              f'style="stroke:var(--color-muted-strong);stroke-width:1.5;stroke-dasharray:4 4"/>')
