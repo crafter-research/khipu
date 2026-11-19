@@ -6,7 +6,7 @@ Preregistered analyses of colour and numerical value in Inka khipus, by [Crafter
 
 - **Measurement.** Within a khipu, cord colour carries 0.016 bits per cord of information about the magnitude of the cord's value once cord layout is controlled. The effect replicates in both major recording traditions (Ascher and Urton) and exceeds 200 within-cluster permutations in each, but falls below the 0.02 bits threshold set for a colour legend.
 - **Replication.** The Santa Valley match to the 1670 tribute census of San Pedro de Corongo reproduces in structure. The published total of 367 pesos corresponds to a position-one sum of 359 plus two imputed broken cords (Urton 2017, Appendix B).
-- **Data correction.** Open Khipu Repository v2.1.0 records tens-place single knots as hundreds on KH0326, confirmed against Urton's appendix; the same pattern appears on KH0472 and KH0401.
+- **Data audit.** Open Khipu Repository v2.1.0 and the Khipu Field Guide assign a different decimal place to single knots on KH0326 and KH0472 (100 against 10). The Field Guide reading fits the tens-scale values in Urton's appendix; see `notes/audit-okr-kfg.md`.
 
 Write-up: [crafter.ing/research/khipu-colour-legend](https://crafter.ing/research/khipu-colour-legend). Tool: [khipu-null](https://github.com/crafter-research/khipu-null).
 

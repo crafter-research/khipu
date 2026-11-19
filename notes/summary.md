@@ -5,7 +5,7 @@ Crafter Research, frontier stream. 2026-11-17 to 2026-11-18. Every claim below p
 ## Summary (revised 2026-11-18 after a hostile review and K7)
 - The color-legend claim is **withdrawn**. With the cord layout controlled (K7), color still predicts value magnitude within a khipu better than 200 shuffles, in both the Ascher and the Urton recording traditions, but by about 0.016 bits per cord, below the 0.02 we fixed beforehand. "Totals carry their own color" (K6) was an artefact of color bands and is retracted.
 - The Santa Valley match to the 1670 tribute census reproduces in structure. Urton's exact total of 367 pesos is a measured 359 plus two imputed broken cords. A moiety total quoted in the literature (381 or 382) is plausibly a misprint for 281 or 282, not yet confirmed.
-- OKR v2.1.0 codes the tens place as hundreds on KH0326 (confirmed against Urton's Appendix B). OKR and the Khipu Field Guide share a source, so their 96.7% agreement is lineage, not independent verification.
+- OKR v2.1.0 and the Khipu Field Guide give single knots a different decimal place on KH0326 (63 pendants) and KH0472 (31 pendants). OKR assigns them 100 and the Field Guide 10. The Field Guide reading matches 105 of 108 KH0326 pendants and the tens-scale values in Urton's appendix, while OKR's reading leaves the tens place empty on almost every cord. The two sources share a lineage, so this is an open discrepancy, not an independent verification.
 
 ## Data
 - OKR v2.1.0 (MIT), SQLite from the GitHub tag `v2.1.0`, sha256 `607913034a0f...`. 619 khipus, 54,403 cords, 110,677 knots.
@@ -46,6 +46,6 @@ Robustness (declared after the audit): on the 507 khipus whose pendants agree at
 
 ## Next
 1. Confirm 381 vs 281 in the English edition of Urton (2017), p. 229.
-2. Report the OKR coding issue on KH0326, KH0472 and KH0401 to the maintainers (pending approval).
+2. Ask the OKR maintainers about the KH0326 and KH0472 discrepancy.
 3. Santa as a key: test whether the color of each six-cord group maps to pachaca or person in the 1670 padron.
 4. Digitization (catalog item D2): record cord spacing from photographs to unlock unit-level tests.

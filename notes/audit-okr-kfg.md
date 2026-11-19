@@ -1,5 +1,15 @@
 # Data audit: OKR v2.1.0 vs Khipu Field Guide, KH0326 (UR090), 2026-11-18
 
+## Correction (2026-11-19)
+
+A follow-up check of OKR's own knot geometry narrowed what this audit can claim.
+
+- `knot.knot_value_type` is the only value column (`knot_cluster.TOTAL_VALUE` is 0 across the corpus), so summing it is the right reading of OKR.
+- On KH0326 and KH0472, OKR and the Khipu Field Guide disagree on the decimal place of single knots: OKR stores 100, the Field Guide 10. OKR's knot positions (`knot_cluster.START_POS`, 2.5 to 9 cm) fall where hundreds sit on three-register cords, so geometry alone does not settle it. Two signs favour tens. On KH0472 the distance from these knots to the units matches tens-to-units elsewhere on the khipu (median 12.5 cm against 21 for hundreds), and OKR's reading would give 63 KH0326 pendants hundreds with no tens.
+- KH0401 is not the same case. OKR matches the Field Guide on 12 of 15 pendants, and the three differences are editorial proposals recorded in the Field Guide's change log ("propose register shift", 2025-11-17), one of them in the opposite direction. KH0401 is withdrawn from this audit.
+- A blanket hundreds-to-tens shift is wrong for some cords. The Field Guide keeps hundreds on KH0326 p38 (172) and KH0472 p1 and p3, and KH0326 p100 and p106 hold two single-knot clusters (Field Guide 116 and 119).
+- The Field Guide is not an independent transcription of OKR. This is a discrepancy to put to the maintainers, not a confirmed error.
+
 Trigger: K3.1 found three-digit first-cord values on UR090 with an empty tens place (105, 202, 308...), outside the 0-13 range the papers report.
 
 Second source: Khipu Field Guide Excel `KH0326.xlsx` (Ashok Khosla, MIT, written 2026-09-08, contributor Carrie Brezine), `Cords` sheet, `Value` column. Saved to `data/kfg/` (not committed).
