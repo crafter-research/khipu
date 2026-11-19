@@ -1,0 +1,19 @@
+{
+  "khipus": 328,
+  "draws": 1094,
+  "min_attainable_p": 0.0009132420091324201,
+  "tested_features": {
+    "first_cord_range": "value:within_khipu"
+  },
+  "untested_features": [
+    "group_size"
+  ],
+  "top": 6,
+  "top_mean_score": 0.9942889777270132,
+  "null_top_mean_95": [
+    0.9541271295908393,
+    0.9857007575757576
+  ],
+  "top_p": 0.0009132420091324201,
+  "significant_at_q05": 0
+}
