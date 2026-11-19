@@ -32,8 +32,10 @@ Raw data is not committed; it downloads from its public sources. Results in `res
 - Khipu Field Guide workbooks (MIT), khipufieldguide.com
 - Medrano and Urton (2018), doi 10.1215/00141801-4260638; FitzPatrick (2024), doi 10.1215/00141801-11266328; Urton (2017), *Inka History in Knots*, University of Texas Press
 
-## License
-Code: MIT (see LICENSE). Text (Markdown notes, PREREGs, results): CC BY 4.0.
+## License and credit
+- Code: MIT (see `LICENSE`).
+- Text, figures and results: CC BY 4.0 (see `LICENSE-DOCS.md`). Reuse them freely, with credit.
+- If you use or mention this work, cite it as in `CITATION.cff` (GitHub shows a "Cite this repository" button), or use the credit line "Crafter Research (2026), Khipu colours and numbers, https://github.com/crafter-research/khipu".
 
 ## History note
 On 2026-11-18, before the first push, author emails in the local history were normalized to a GitHub noreply address. Commit dates were preserved, commit hashes changed, and every hash cited in the Markdown files was updated to the new one in the commit that follows. Before that day the repository had no remote, so lock times rest on this history alone.

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use or mention this work, please cite it as below."
+title: "Khipu colours and numbers: seven preregistered tests"
+authors:
+  - name: "Crafter Research"
+  - family-names: "Hugo Quispe"
+    given-names: "Railly"
+repository-code: "https://github.com/crafter-research/khipu"
+url: "https://crafter.ing/research/khipu-colour-legend"
+license: MIT
+date-released: 2026-11-18
+type: software
